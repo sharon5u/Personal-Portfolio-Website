@@ -666,6 +666,7 @@
   @media (prefers-reduced-motion: reduce){
     .btn, .project-card{ transition:none; }
     .book-cover{ transition:none; }
+    .hero-banner-image{ animation:none; }
   }
 
   :focus-visible{
