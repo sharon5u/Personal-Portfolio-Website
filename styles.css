@@ -68,25 +68,25 @@
   #hero{
     position:relative;
     padding:18px 0 70px;
-    overflow:hidden;
+    overflow:visible;
   }
 
-  .hero-banner-frame{
+ .hero-banner-frame{
   position:absolute;
   top:0;
+  bottom:0;
   left:50%;
   transform:translateX(-50%);
   width:100vw;
-  aspect-ratio:21 / 9;
   z-index:0;
-}
+ }
  .hero-banner{
   position:absolute;
   inset:0;
   overflow:hidden;
   background:var(--navy);
-}
-.hero-banner-image{
+ }
+ .hero-banner-image{
   position:absolute;
   inset:0;
   background-image:url('banner.jpg');
