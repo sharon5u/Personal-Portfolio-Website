@@ -72,14 +72,14 @@
   }
 
   .hero-banner-frame{
-    position:absolute;
-    top:0;
-    left:50%;
-    transform:translateX(-50%);
-    width:100vw;
-    aspect-ratio:21 / 9;
-    z-index:0;
-  }
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:100vw;
+  aspect-ratio:21 / 9;
+  z-index:0;
+}
  .hero-banner{
   position:absolute;
   inset:0;
