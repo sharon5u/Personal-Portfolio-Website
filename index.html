@@ -50,7 +50,7 @@
         <h1 class="hero-name"><span class="lead-in">Hi there, I'm</span>Sharon Wu</h1>
         <p class="hero-tagline">I'm an Economics &amp; Statistics major at Carnegie Mellon, originally from Beijing, with a soft spot for cello, film, and the outdoors.</p>
         <div class="hero-ctas">
-          <a href="#about-details" class="btn btn-primary">See my work</a>
+          <a href="#projects" class="btn btn-primary">See my work</a>
           <a href="#contact" class="btn btn-secondary">Get in touch</a>
         </div>
       </div>
@@ -92,76 +92,94 @@
   </section>
 
   <section id="projects" class="wrap">
-    <div class="section-head">
-      <h2>Projects</h2>
-      <p>[A running log of things I've built — updating this throughout the semester as coursework and side projects come together.]</p>
-    </div>
+    <div class="projects-book" id="projectsBook">
+      <div class="book-spine"></div>
 
-    <div class="project-grid">
+      <div class="book-cover" id="bookCover">
+        <div class="book-cover-inner">
+          <p class="book-kicker">Projects</p>
+          <h2>See My Work</h2>
+          <p>A running log of what I've built this semester — flip the page to take a look.</p>
+          <button type="button" class="btn btn-primary" id="seeWorkBtn" aria-expanded="false" aria-controls="projectsBook">See my work</button>
+        </div>
+      </div>
 
-      <article class="project-card">
-        <div class="project-thumb">
-          <p>[project screenshot or thumbnail]</p>
-        </div>
-        <div class="project-body">
-          <h3>[Project One]</h3>
-          <p>[One or two sentences on what it does, the problem it solves, and your role in building it.]</p>
-          <div class="project-tags">
-            <span>[Tech]</span>
-            <span>[Tech]</span>
-            <span>[Tech]</span>
+      <div class="book-content">
+        <div class="book-content-head">
+          <div>
+            <h2>Projects</h2>
+            <p>A running log of things I've built — updating this throughout the semester as coursework and side projects come together.</p>
           </div>
-          <div class="project-links">
-            <a href="#">Live demo →</a>
-            <a href="#">Code →</a>
-          </div>
+          <button type="button" class="book-close" id="bookCloseBtn">Close ✕</button>
         </div>
-      </article>
 
-      <article class="project-card">
-        <div class="project-thumb">
-          <p>[project screenshot or thumbnail]</p>
-        </div>
-        <div class="project-body">
-          <h3>[Project Two]</h3>
-          <p>[One or two sentences on what it does, the problem it solves, and your role in building it.]</p>
-          <div class="project-tags">
-            <span>[Tech]</span>
-            <span>[Tech]</span>
-          </div>
-          <div class="project-links">
-            <a href="#">Live demo →</a>
-            <a href="#">Code →</a>
-          </div>
-        </div>
-      </article>
+        <div class="project-grid">
 
-      <article class="project-card">
-        <div class="project-thumb">
-          <p>[project screenshot or thumbnail]</p>
-        </div>
-        <div class="project-body">
-          <h3>[Project Three]</h3>
-          <p>[One or two sentences on what it does, the problem it solves, and your role in building it.]</p>
-          <div class="project-tags">
-            <span>[Tech]</span>
-            <span>[Tech]</span>
-            <span>[Tech]</span>
-          </div>
-          <div class="project-links">
-            <a href="#">Live demo →</a>
-            <a href="#">Code →</a>
-          </div>
-        </div>
-      </article>
+          <article class="project-card">
+            <div class="project-thumb">
+              <p>[project screenshot or thumbnail]</p>
+            </div>
+            <div class="project-body">
+              <h3>[Project One]</h3>
+              <p>[One or two sentences on what it does, the problem it solves, and your role in building it.]</p>
+              <div class="project-tags">
+                <span>[Tech]</span>
+                <span>[Tech]</span>
+                <span>[Tech]</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Live demo →</a>
+                <a href="#">Code →</a>
+              </div>
+            </div>
+          </article>
 
-      <article class="project-card is-placeholder">
-        <div class="project-body">
-          <h3>More coming soon</h3>
-          <p>New projects get added here as the semester goes on.</p>
-        </div>
-      </article>
+          <article class="project-card">
+            <div class="project-thumb">
+              <p>[project screenshot or thumbnail]</p>
+            </div>
+            <div class="project-body">
+              <h3>[Project Two]</h3>
+              <p>[One or two sentences on what it does, the problem it solves, and your role in building it.]</p>
+              <div class="project-tags">
+                <span>[Tech]</span>
+                <span>[Tech]</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Live demo →</a>
+                <a href="#">Code →</a>
+              </div>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <div class="project-thumb">
+              <p>[project screenshot or thumbnail]</p>
+            </div>
+            <div class="project-body">
+              <h3>[Project Three]</h3>
+              <p>[One or two sentences on what it does, the problem it solves, and your role in building it.]</p>
+              <div class="project-tags">
+                <span>[Tech]</span>
+                <span>[Tech]</span>
+                <span>[Tech]</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Live demo →</a>
+                <a href="#">Code →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card is-placeholder">
+            <div class="project-body">
+              <h3>More coming soon</h3>
+              <p>New projects get added here as the semester goes on.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </div>
   </section>
 

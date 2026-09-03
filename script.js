@@ -32,3 +32,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach((section) => observer.observe(section));
 });
+
+// Flips the "book cover" open to reveal the projects grid, and lets it be
+// closed again by flipping back.
+document.addEventListener('DOMContentLoaded', () => {
+  const cover = document.getElementById('bookCover');
+  const openBtn = document.getElementById('seeWorkBtn');
+  const closeBtn = document.getElementById('bookCloseBtn');
+
+  if (!cover || !openBtn) return;
+
+  const openBook = () => {
+    cover.classList.add('is-open');
+
+    const handleOpenEnd = (event) => {
+      if (event.propertyName !== 'transform') return;
+      cover.classList.add('is-hidden');
+      cover.removeEventListener('transitionend', handleOpenEnd);
+    };
+    cover.addEventListener('transitionend', handleOpenEnd);
+
+    openBtn.setAttribute('aria-expanded', 'true');
+  };
+
+  const closeBook = () => {
+    // Make the cover visible again first (still flipped away), then let the
+    // transform transition play back to 0deg on the next frame so it's
+    // animated rather than snapping shut instantly.
+    cover.classList.remove('is-hidden');
+    requestAnimationFrame(() => {
+      cover.classList.remove('is-open');
+    });
+
+    openBtn.setAttribute('aria-expanded', 'false');
+  };
+
+  openBtn.addEventListener('click', openBook);
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeBook);
+  }
+});
