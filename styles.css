@@ -164,7 +164,7 @@
 
   .photo-placeholder{
     position:relative;
-    width:min(380px, 48%);
+    width:min(380px, 40%);
     aspect-ratio:3/4;
     border-radius:6px;
     overflow:hidden;
